@@ -1,4 +1,6 @@
 VotingWidget::Application.routes.draw do
+  root :to => 'votings#index'
+  resources :options
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

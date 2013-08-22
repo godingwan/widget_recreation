@@ -1,0 +1,19 @@
+<h1>A Widget</h1>
+
+<h2>Which type of widget is your favorite to develop?</h2>
+<div>
+  <%= form_for @option do |f| %>
+    <%= f.radio_button :choice, "poll" %>Poll
+    <br/>
+    <%= f.radio_button :choice, "slideshow" %>Slideshow
+    <br/>
+    <%= f.radio_button :choice, "countdown" %>Countdown
+    <br/>
+    <%= f.radio_button :choice, "this_or_that" %>This or That?
+    <br/>
+    <%= f.radio_button :choice, "all_of_the_above" %>All of the above
+    <br/>
+
+    <%= f.submit %>
+  <%- end %>
+</div>
