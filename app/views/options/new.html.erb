@@ -1,6 +1,3 @@
-<h1>A Widget</h1>
-
-<h2>Which type of widget is your favorite to develop?</h2>
 <div>
   <%= form_for @option do |f| %>
     <%= f.radio_button :choice, "poll" %>Poll
@@ -14,6 +11,6 @@
     <%= f.radio_button :choice, "all_of_the_above" %>All of the above
     <br/>
 
-    <%= f.submit %>
+    <%= f.submit "Vote!" %>
   <%- end %>
 </div>
