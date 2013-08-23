@@ -1,14 +1,14 @@
 <div>
   <%= form_for @option do |f| %>
-    <%= f.radio_button :choice, "poll" %>Poll
+    <%= f.radio_button :choice, "poll", :class => "options" %>Poll
     <br/>
-    <%= f.radio_button :choice, "slideshow" %>Slideshow
+    <%= f.radio_button :choice, "slideshow", :class => "options" %>Slideshow
     <br/>
-    <%= f.radio_button :choice, "countdown" %>Countdown
+    <%= f.radio_button :choice, "countdown", :class => "options" %>Countdown
     <br/>
-    <%= f.radio_button :choice, "this_or_that" %>This or That?
+    <%= f.radio_button :choice, "this_or_that", :class => "options" %>This or That?
     <br/>
-    <%= f.radio_button :choice, "all_of_the_above" %>All of the above
+    <%= f.radio_button :choice, "all_of_the_above", :class => "options" %>All of the above
     <br/>
 
     <%= f.submit "Vote!" %>

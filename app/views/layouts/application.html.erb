@@ -8,11 +8,17 @@
 </head>
 <body>
 
-  <h1>A Widget</h1>
+  <div class="widget_container">
+    <h1 class="title">A Widget</h1>
+    <div class="subtitle_spacing"></div>
 
-  <h2>Which type of widget is your favorite to develop?</h2>
+    <div>
+      <h2 class="description">Which type of widget is your favorite to develop?</h2>
 
-  <%= yield %>
+      <%= yield %>
+    </div>
+  </div>
+
 
 </body>
 </html>
