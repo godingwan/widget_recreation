@@ -7,18 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
   <div class="widget_container">
     <h1 class="title">A Widget</h1>
     <div class="subtitle_spacing"></div>
 
-    <div>
+    <div class="voting_content">
       <h2 class="description">Which type of widget is your favorite to develop?</h2>
 
       <%= yield %>
     </div>
   </div>
 
-
+  <p class="note">Note: I am practicing recreating the widget from http://www.widgetbox.com/widgets/make?code=poll</p>
 </body>
 </html>

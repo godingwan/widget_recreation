@@ -19,7 +19,30 @@
 
 .description
   font-size: 13px
-  padding: 10px
+  color: purple
+  margin-bottom: 10px
 
 .options
   margin-bottom: 10px
+
+.voting_content
+  padding: 10px
+  background-color: beige
+
+.result_label
+  color: #36136d
+  margin: 12px 0
+  font-size: 13px
+
+.results_content
+  font-size: 12px
+
+.vote_button
+  background-color: green
+  color: white
+  border: solid 1px white
+  +border-radius(15px)
+  padding: 5px 13px
+  font-size: 15px
+  &:hover
+    +background-image(linear-gradient(lightgreen, darken(lightgreen, 50%)))
