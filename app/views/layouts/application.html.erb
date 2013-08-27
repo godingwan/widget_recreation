@@ -14,11 +14,12 @@
       <div class="voting_display">
         <h2 class="description">Which type of widget is your favorite to develop?</h2>
 
-        <input type="radio" name="choice" value="poll" class="options">Poll<br/>
+        <input type="radio" name="choice" value="poll" class="options" checked>Poll<br/>
         <input type="radio" name="choice" value="slideshow" class="options">Slideshow<br/>
         <input type="radio" name="choice" value="countdown" class="options">Countdown<br/>
         <input type="radio" name="choice" value="this_or_that" class="options">This or That?<br/>
         <input type="radio" name="choice" value="all_of_the_above" class="options">All of the above<br/>
+        <a href="javascript: submitVote()" id="vote_button">Vote!</a>
       </div>
 
       <div class="result_display">
