@@ -3,7 +3,6 @@
 <head>
   <title>VotingWidget</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,12 +11,33 @@
     <div class="subtitle_spacing"></div>
 
     <div class="voting_content">
-      <h2 class="description">Which type of widget is your favorite to develop?</h2>
+      <div class="voting_display">
+        <h2 class="description">Which type of widget is your favorite to develop?</h2>
 
-      <%= yield %>
+        <input type="radio" name="choice" value="poll" class="options" checked>Poll<br/>
+        <input type="radio" name="choice" value="slideshow" class="options">Slideshow<br/>
+        <input type="radio" name="choice" value="countdown" class="options">Countdown<br/>
+        <input type="radio" name="choice" value="this_or_that" class="options">This or That?<br/>
+        <input type="radio" name="choice" value="all_of_the_above" class="options">All of the above<br/>
+        <a href="javascript: submitVote()" id="vote_button">Vote!</a>
+      </div>
+
+      <div class="result_display">
+        <div class="result_label">Results:</div>
+        <div class="options" id="poll"></div>
+        <div class="options" id="slideshow"></div>
+        <div class="options" id="countdown"></div>
+        <div class="options" id="this_or_that"></div>
+        <div class="options" id="all_of_the_above"></div>
+      </div>
+
+      <%#= yield %>
     </div>
   </div>
 
   <p class="note">Note: I am practicing recreating the widget from http://www.widgetbox.com/widgets/make?code=poll</p>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <%= javascript_include_tag "application" %>
 </body>
 </html>
