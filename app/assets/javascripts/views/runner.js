@@ -3,4 +3,5 @@ if(localStorage.length === 0){
 }else{
   displayResults();
 }
-// $('.result_display').hide();
+
+$('.result_display').hide();

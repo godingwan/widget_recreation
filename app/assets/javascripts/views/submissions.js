@@ -1,6 +1,9 @@
 function submitVote(){
   var result = $('input[name="choice"]:checked').val();
   incrementByOne(result);
+  displayResults();
+  $('.voting_display').hide(1000);
+  $('.result_display').show(1000);
 }
 
 function incrementByOne(choice){
